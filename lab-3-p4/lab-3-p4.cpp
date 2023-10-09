@@ -15,6 +15,12 @@ int main()
 	int mark;
 	std::cout << "Введите оценку (0 - 5): ";
 	std::cin >> mark;
+	if (grade < 0 || grade > 5)
+	{
+		std::cout << "Неверно задана оцненка" << std::endl;
+		return 0;
+	}
+
 	switch (mark)
 	{
 		case 5: std::cout << "Отлично"; break;
